@@ -1,4 +1,4 @@
-fetch("https://script.google.com/macros/s/AKfycbzvWvW1IwKRMRho_9p1rMTJYzf91i5T6nauFrKM1mu7rOAJMtvwAKiXGo_Z70dP7JFNjw/exec")
+fetch("https://script.google.com/macros/s/AKfycby3pbrTuskOi4851nkCn7g9avvj9LsE5llqNnOcxX0SDGgDiaQYrGnK0yETd3_cQZigPA/exec")
   .then(response => response.json())
   .then(products => {
     const grid = document.getElementById("product-grid");
