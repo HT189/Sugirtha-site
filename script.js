@@ -1,11 +1,11 @@
-const API_URL = "https://script.google.com/macros/s/AKfycbzvWvW1IwKRMRho_9p1rMTJYzf91i5T6nauFrKM1mu7rOAJMtvwAKiXGo_Z70dP7JFNjw/exec";
-
-fetch(API_URL)
+fetch("https://script.google.com/macros/s/AKfycbzvWvW1IwKRMRho_9p1rMTJYzf91i5T6nauFrKM1mu7rOAJMtvwAKiXGo_Z70dP7JFNjw/exec")
   .then(response => response.json())
   .then(products => {
     const grid = document.getElementById("product-grid");
 
     products.forEach(item => {
+      console.log("Image URL:", item.image); // ✅ Logs each image URL
+
       const card = document.createElement("div");
       card.className = "border rounded-2xl shadow p-4 bg-white";
 
@@ -19,6 +19,6 @@ fetch(API_URL)
       grid.appendChild(card);
     });
   })
-  .catch(err => {
-    console.error("Error fetching products:", err);
+  .catch(error => {
+    console.error("Failed to load products:", error);
   });
