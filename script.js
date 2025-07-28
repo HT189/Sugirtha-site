@@ -14,7 +14,7 @@ fetch("https://script.google.com/macros/s/AKfycbzvWvW1IwKRMRho_9p1rMTJYzf91i5T6n
         <h2 class="text-xl font-semibold">${item.title}</h2>
         <p class="text-sm text-gray-600">${item.description}</p>
         <p class="mt-2 text-lg font-bold text-pink-600">${item.price}</p>
-    `;
+      `;
 
 
       grid.appendChild(card);
